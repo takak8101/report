@@ -5,9 +5,7 @@ import re
 def calc(A,B):
         ai=str(A)
         bi=str(B)
-        #p = re.compile('\d+(\.\d+)?')
         p = re.compile('\d+')
-        #if p.match(ai) or p.match(bi):
         if p.fullmatch(ai) and p.fullmatch(bi):
                 a=float(ai)
                 b=float(bi)
